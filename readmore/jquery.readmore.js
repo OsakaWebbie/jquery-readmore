@@ -28,7 +28,7 @@
     };
 
     var opts =  $.extend({}, defaults, settings);
-    if (settings.more_link) {
+    if (settings.more_link) {  //for backward compatibility with the old option syntax
       opts.more_text = settings.more_link.match(/<a[^>]*>(.*?)<\/a>/)[1];
     }
 
